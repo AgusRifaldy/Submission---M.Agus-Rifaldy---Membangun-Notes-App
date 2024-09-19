@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuzuhiko's Notes App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app-bar.js" defer></script>
+    <script src="note-form.js" defer></script>
+    <script src="note-item.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <app-bar></app-bar>
+
+    <note-form></note-form>
+
+    <section class="filter-buttons">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="project">Project</button>
+      <!-- Update di sini -->
+      <button class="filter-btn" data-filter="business">Business</button>
+      <button class="filter-btn" data-filter="personal">Personal</button>
+      <button class="filter-btn" data-filter="archived">Archived</button>
+    </section>
+
+    <section class="note-list" id="note-list"></section>
+  </body>
+</html>

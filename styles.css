@@ -1,0 +1,172 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  color: #009080;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 20px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  color: #009080;
+}
+
+.add-note-section {
+  background-color: #fefae0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #009080;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #009080;
+  color: #fefae0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.primary-btn:hover {
+  background-color: #1faa59;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  display: none;
+}
+
+.filter-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.filter-btn {
+  background-color: transparent;
+  border: 2px solid #009080;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #009080;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.filter-btn.active,
+.filter-btn:focus,
+.filter-btn:hover {
+  background-color: #009080;
+  color: #fefae0;
+}
+
+.note-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.note-item {
+  background-color: #fefae0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-item h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.note-item p {
+  margin: 10px 0;
+}
+
+.note-item .note-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.note-item .note-actions button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.note-item .note-actions .edit {
+  background-color: #009080;
+  color: #fefae0;
+}
+
+.note-item .note-actions .edit:hover {
+  background-color: #1faa59;
+}
+
+.note-item .note-actions .delete {
+  background-color: black;
+  color: #fefae0;
+}
+
+.note-item .note-actions .delete:hover {
+  background-color: red;
+}
